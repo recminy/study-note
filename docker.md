@@ -444,6 +444,9 @@ root@iZt4nd:~# docker run --name myWeb -p 127.0.0.1::80 nginx:latest
     ```shell
   root@iZt4nd:~# docker run --name myWeb -p 127.0.0.1:8080:80 nginx:latest
     #curl 127.0.0.1:8080
+    ```
+  ```
+  
   ```
   
 - 自定义docker0桥网络属性: /etc/docker/daemon.json
@@ -451,7 +454,7 @@ root@iZt4nd:~# docker run --name myWeb -p 127.0.0.1::80 nginx:latest
   >```json
   >{
   >	"bip": "192.168.1.5/24",
-  >    "default-gateway": "",
+  >        "default-gateway": "",
   >	"dns": ["10.20.1.2", "10.20.1.3"]
   >}
   >```
