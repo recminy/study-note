@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>旋转的魔方</title>
+		<style>
+			.box {
+				width: 300px;
+				height: 300px;
+				margin: 100px auto;
+				position: relative;
+				transform-style: preserve-3d;
+				animation: rotate 8s linear infinite;
+			}
+			.box > div {
+				width: 300px;
+				position: absolute;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: 90px;
+				height: 90px;
+				margin: 5px;
+				float: left;
+				font-size: 50px;
+				text-align: center;
+				line-height: 90px;
+				border-radius: 15px;
+			}
+			.front li {
+				background: green;
+			}
+			.end li {
+				background: deepskyblue;
+				transform: rotateY(180deg);
+			}
+			.left li{
+				background: orange;
+			}
+			.right li {
+				background: blue;
+			}
+			.top li{
+				background: purple;
+			}
+			.buttom li {
+				background: red;
+			}
+			.right {
+				background-color: transparent;
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			.left {
+				background-color: transparent;
+				transform: rotateY(-90deg) translateZ(150px);
+			}
+			.top {
+				background-color: transparent;
+				transform: rotateX(90deg) translateZ(150px);
+			}
+			.buttom {
+				background-color: transparent;
+				transform: rotateX(-90deg) translateZ(150px);
+			}
+			.front {
+				background-color: transparent;
+				transform: rotateZ(0) translateZ(150px);
+			}			
+			.end {
+				background-color: transparent;
+				transform: rotateZ(0) translateZ(-150px);
+			}
+			/*动画*/
+			@keyframes rotate{
+				0%{
+					transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+				}
+				100%{
+					transform: rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+				}
+			}
+		</style>
+		<script>
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="front">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+			</div>
+			<div class="end">
+				<ul>
+					<li>3</li>
+					<li>2</li>
+					<li>1</li>
+					<li>6</li>
+					<li>5</li>
+					<li>5</li>
+					<li>9</li>
+					<li>8</li>
+					<li>7</li>
+				</ul>
+			</div>
+			<div class="top">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+			</div>
+			<div class="buttom">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+			</div>
+			<div class="left">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+			</div>
+			<div class="right">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
