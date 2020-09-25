@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Animate Circle</title>
+		<style>
+			.box {
+				width: 0;
+				height: 0;
+				border-left: 100px dashed red;
+				border-right: 100px dashed darkorange;
+				border-bottom: 100px dashed deepskyblue;
+				border-top: 100px dashed mediumpurple;
+				border-radius: 50%;
+				-animation: rotate 3s linear infinite;
+				animation: rotate;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes rotate{
+				from{
+					transform: rotateZ(0deg);
+				}
+				to{
+					transform: rotateZ(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
