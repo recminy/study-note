@@ -179,10 +179,8 @@ scheme://host:port/path?query#fragment
 ## 参考文档
 
 - [阮一峰 - RESTful API 最佳实践](http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html)
-
 - [阮一峰 - RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
-
 - [阮一峰 - 理解RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
-
 - [资源控制器 - RESTful API在Laravel中的实践](https://learnku.com/docs/laravel/8.x/controllers/9368#resource-controllers)
+- [GoWeb编程 - Web服务 - REST](https://learnku.com/docs/build-web-application-with-golang/083-rest/3205)
 
